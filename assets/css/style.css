@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(72, 96, 207);
 }
 
 h1{
@@ -23,4 +23,63 @@ h1{
 
 .logo{
     padding-left: 40%;
+}
+
+.ordercards{
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+}
+
+.card .contenido{
+    text-align: center;
+    padding: 15px;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: rgb(46, 46, 46);
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(0, 102, 255);
+    border: 1px solid rgb(0, 102, 255);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: rgb(0, 102, 255);
+    color: white;
 }
