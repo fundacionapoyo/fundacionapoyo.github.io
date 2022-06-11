@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b6776eee0d.js" crossorigin="anonymous"></script>
+    <!-- CSS PROPIOS -->
+    <link rel="stylesheet" href="assets/css/info.css">
+    <link rel="stylesheet" href="assets/css/style_modal.css">
+    <title>info</title>
+</head>
+<body>
+  <!--========================================================== -->
+                        <!-- NAVBAR -->
+    <!--========================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top " >
+      <div class="container-fluid m-4 ps-5" id="navbar">
+        <img class="img-logo-nav" src="assets/img/Logo.svg" alt="">
+        <a class="navbar-brand ms-5" href="index.html">Inicio</a>
+        <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="info.html">Sobre Nuestra Fundacion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicación</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <button class="dm-config" onclick="lightMode()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-low-fill wm-confi" viewBox="0 0 16 16">
+                  <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
+                </svg>
+              </button>
+              <button class="dm-config" onclick="darkMode()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill dm-confi" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+              </svg>
+              </button>
+            </li>
+          </ul>
+          <div class="relog-digital ms-5">
+            <div class="tiempo">
+              <span class="hours">00</span>
+              <span class="dots">:</span>
+              <span class="minutes">00</span>
+              <div class="right-side">
+                <span class="seconds">00</span>
+              </div>
+            </div>
+            <div class="calendar">
+              <span class="day-name">jueves</span>
+              <span class="day-number">6</span>
+              <span class="month-name">Marzo</span>
+              <span class="year">2022</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    </nav>
+<main>
+  
+  <!--========================================================== -->
+                        <!-- SECTION 1 -->
+  <!--========================================================== -->
+
+  
+  <section class="container-fluid" id="section-1">
+    <div>
+      <div class="row text-center">
+        <h1 id="h1-1">¿Te has puesto a reflexionar sobre la importancia de la salud mental?</h1>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <h4 class="text-center mt-4" id="texto-1">Las enfermedades de salud mental constituyen una epidemia silenciosa que ha afectado a las Américas mucho antes de COVID-19, con depresión y ansiedad como dos de las principales causas de discapacidad. La Región también tiene el segundo nivel más alto de consumo de alcohol en el mundo”.</h4></div>
+        <div class="col-2"></div>
+      </div>
+      
+      <div class="row" id="datos">
+        <h1 class="text-center" id="h1-2">Algunos datos impactantes sobre la salud mental</h1>
+        <div class="col-xxl-4">
+          <p class="text-center fs-3" id="parrafo-1">Los trastornos mentales, neurológicos y por el consumo de sustancias representan el 10% de la carga mundial de morbimortalidad y el 30% de las enfermedades no mortales.</p>
+        </div>
+        <div class="col-xxl-4">
+          <p class="text-center fs-3 " id="parrafo-2">Alrededor 1 de cada 5 niños, niñas y adolescentes es diagnosticado con un trastorno mental.
+            La depresión es uno de los principales trastornos que afecta a la población mundial, siendo una de las causas más importantes de discapacidad.</p>
+        </div>
+        <div class="col-xxl-4">
+          <p class="text-center fs-3" id="parrafo-3">
+            Una persona se suicida en el mundo cada 40 segundos aproximadamente.
+          </p>
+        </div>
+      </div>
+      <img class=" img-fluid rounded mx-auto d-block m-4" src="https://www.chilepositivo.org/wp-content/uploads/2020/01/depresion-13enero-450x450.png" alt="imagen-depresion">
+    </div>
+  </section>
+
+  <!--========================================================== -->
+                        <!-- SECTION 2 -->
+  <!--========================================================== -->
+  <section class="container-fluid">
+    <div>
+    <h1 class="text-center" id="h1-3">Sobre nuestra fundacion</h1>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8"><h3 class="mt-4 mx-auto text-center" id="titulo3">Al lograr darnos cuenta sobre la brecha abierta que existe en nuestro pais, decidimos que ya era momento de que alguien se hiciera cargo, estamos dispuestos 24/7 en nuestro centro para la ayuda de gente que se sienta sola. Contamos con expertos que estaran contigo para ayudarte en tu camino de encontrar la estabilidad mental. </h3></div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <h2 class="text-center mt-4 mb-4">Ofrecemos los siguientes servicios</h2>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <ul class="list-group list-group-flush text-center fs-1">
+          <li class="list-group-item" id="li1">De los mejores psicologos disponibles en el pais</li>
+          <li class="list-group-item" id="li2">Facil acceso a medicamentos que sean necesarios</li>
+          <li class="list-group-item" id="li3">Zonas de reflexion</li>
+          <li class="list-group-item" id="li4">Clases de yoga</li>
+          <li class="list-group-item" id="li5">Servicio 24/7</li>
+        </ul> 
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    </div>
+  </section>
+
+  <!--========================================================== -->
+                        <!-- SECTION 3 -->
+  <!--========================================================== -->
+  <section class="container-fluid">
+    <div>
+      <h1 class="text-center" id="h1-4">¿Quieres colaborar con nosotros?</h1>
+    <div class="row">
+      <div class="col-md">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 mx-auto"><h4 class="text-center">Contamos con becas para gente que no puede pagar pagar un servicio de ayuda mental, entonces nuestras colaboraciones estan destinadas para la gente que no tiene dinero para pagar.</h4>
+            <img class="img-fluid" src="https://img.freepik.com/vector-gratis/concepto-donacion-ropa-dibujada-mano_52683-54767.jpg?w=2000" alt=""> 
+        <div class="row">
+          <button class="btn btn-primary mx-auto" id="boton" type="button" data-bs-toggle="modal" data-bs-target="#modallogin">Hazte donador aqui</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- MODAL FOR LOGIN -->
+  <div class="modal fade" id="modallogin" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <form class="formulario">
+                <h1>LOGIN</h1>
+                <div class="contenedor">
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-envelope iconform"></i>
+                        <input type="text" placeholder="Correo Electronico">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-key iconform"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <a href="contacto.html">
+                      <input type="button" value="LOGIN" class="button">
+                    </a><br><br>
+                    <p>No tienes cuenta?<a class="link" href="#modalcreateuser" data-bs-toggle="modal">Registrate</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <!-- MODAL FOR CREATE USER -->
+  <div class="modal fade" id="modalcreateuser" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <form class="formulario">
+                <h1>REGISTRATE</h1>
+                <div class="contenedor">
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-user iconform"></i>
+                        <input type="text" placeholder="Nombre Completo">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-envelope iconform"></i>
+                        <input type="text" placeholder="Correo Electronico">
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-key iconform"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <a href="contacto.html">
+                      <input type="button" value="Registrate" class="button">
+                    </a><br>
+                    <p>Al registrarte, aceptas nuestras Condiciones de uso y Politica de privacidad.</p>
+                    <p>Ya tienes cuenta?<a class="link" href="#modallogin" data-bs-toggle="modal">Iniciar sesion</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <!--========================================================== -->
+                        <!-- SECTION 4 -->
+  <!--========================================================== -->
+  <section class="container-sm">
+    <div class="row">
+      <h1 class="text-center" id="h1-5" >Nuestros Aportadores</h1>
+        <div class="card-group">
+            <div class="card" id="card-1">
+              <img class="img-fluid" id="imagen0" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen1" >
+              <div class="card-body">
+                <h3 class="card-title text-center" id="nombre0"></h3>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Genero: </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="genero0"> </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Edad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="edad0"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Ciudad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="ciudad0"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Pais:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="pais0"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Número:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="numero0"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text ">Correo:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="correo0"></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" id="card-2">
+              <img class="img-fluid" id="imagen1" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen2">
+              <div class="card-body">
+                <h3 class="card-title text-center" id="nombre1"></h3>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Genero: </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="genero1"> </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Edad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="edad1"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Ciudad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="ciudad1"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Pais:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="pais1"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Número:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="numero1"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text ">Correo:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="correo1"></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card" id="card-3">
+              <img class="img-fluid" id="imagen2" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen3">
+              <div class="card-body">
+                <h3 class="card-title text-center" id="nombre2"></h3>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Genero: </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="genero2"> </h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Edad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="edad2"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Ciudad:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="ciudad2"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Pais:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="pais2"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text">Número:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="numero2"></h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <h5 class="card-text ">Correo:  </h5>
+                  </div>
+                  <div class="col-9">
+                    <h5 class="text-center" id="correo2"></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+        <div class="card-group">
+          <div class="card" id="card-4">
+            <img class="img-fluid" id="imagen3" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen4">
+            <div class="card-body">
+              <h3 class="card-title text-center" id="nombre3"></h3>
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Genero: </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="genero3"> </h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Edad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="edad3"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Ciudad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="ciudad3"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Pais:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="pais3"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Número:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="numero3"></h5>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text ">Correo:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="correo3"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+          <!--========================================================== -->
+                          <!-- Cards 2-->
+          <!--========================================================== -->
+          <div class="card" id="card-5">
+            <img class="img-fluid" id="imagen4" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen5">
+            <div class="card-body">
+              <h3 class="card-title text-center" id="nombre4"></h3>
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Genero: </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="genero4"> </h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Edad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="edad4"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Ciudad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="ciudad4"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Pais:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="pais4"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Número:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="numero4"></h5>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text ">Correo:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="correo4"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+  
+          <!--========================================================== -->
+                          <!-- Cards 3-->
+          <!--========================================================== -->
+          <div class="card" id="card-6">
+            <img class="img-fluid" id="imagen5" src="https://randomuser.me/api/portraits/men/75.jpg" alt="imagen6">
+            <div class="card-body">
+              <h3 class="card-title text-center" id="nombre5"></h3>
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Genero: </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="genero5"> </h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Edad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="edad5"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Ciudad:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="ciudad5"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Pais:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="pais5"></h5>
+                </div>
+              </div>
+  
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text">Número:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="numero5"></h5>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-3">
+                  <h5 class="card-text ">Correo:  </h5>
+                </div>
+                <div class="col-9">
+                  <h5 class="text-center" id="correo5"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--========================================================== -->
+                        <!-- FOOTER -->
+  <!--========================================================== -->
+  <footer>
+          <div class="container-fluid bg-dark p-3 text-white" id="correo-footer">
+            <div class="row">
+              <div class="col-md-4 m-auto mb-5">
+                <form>
+                  <div class="mb-3 text-center">
+                    <label for="exampleInputEmail1" class="form-label">SUSCRIBETE A NUSTRO CORREO</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 text-center" id="menu-footer">
+                <h3>Menú</h3>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="info.html">Sobre Nuestra fundacion</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+              </ul>
+              </div>
+
+              <div class="col-md-4 text-center" id="paginas-footer">
+                <h3>Mas paginas de ayuda</h3>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                      <a class="links" href="https://psicovida.cl/agenda/">Psicovida</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="links" href="https://www.gob.cl/saludablemente/">Saludablemente</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="links" href="https://www.psiquiatrasonline.com/?gclid=CjwKCAjwj42UBhAAEiwACIhADl0vDMuFLFb9L_hT9U2zSN8dD1m3A1sGwYuTPekGmLTRSUaUprg29hoCpccQAvD_BwE">Psiquiatrasonline</a>
+                  </li>
+              </ul>
+              </div>
+
+              <div class="col-md-4 text-center" id="contacto-footer">
+                <ul class="nav flex-column">
+                  <li class="nav-item mx-auto">
+                    <h3>Contacto</h3>
+                    <p>Calle: Los Estanques 2012</p>
+                    <p>Comuna: Providencia</p>
+                    <p>Region: Región Metropolitana</p>
+                    <p>Celular: +56933652424</p>
+                    <p>Correo: Fundacion"nombre"@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 m-auto ">
+                <p class="mb-3 text-center pt-5 text-secondary">© 2022 TODOS LOS DERECHOS RESERVADOS</p>
+              </div>
+            </div>
+          </div>
+  </footer>
+</main>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/info.js"></script>
+</body>
+</html>
