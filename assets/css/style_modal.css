@@ -5,12 +5,13 @@
 
 .formulario{
     background: white;
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 3px;
     box-sizing: border-box;
 }
 
 .formulario h1{
+    padding-bottom: 2em;
     text-align: center;
     color: #1a2537;
     font-size: 40px;
